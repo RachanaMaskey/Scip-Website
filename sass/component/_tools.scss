@@ -1,5 +1,6 @@
 .tools{
-    background: url('../images/intelligence.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    // background: url('../images/intelligence.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+    background-color:#0C0C0D ;
     .top{
         h1{
             text-transform: uppercase;
@@ -45,23 +46,23 @@
             backdrop-filter: blur(50px);
             border: 1px solid #B9B9B9;
             border-radius: 10px;
-            padding: 20px;
+            padding: 20px 20px 5px 20px;
+            min-height: 250px;
             .title {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
             }
             .description {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             }
             .tool-button {
                 opacity:0;
-                height:0px;
                 background-color: white;
                 border-radius: 30px;
                 width: fit-content;
                 padding: 9px 19px;
-                margin: 20px auto 0;
+                margin-top:auto;
                 border: none;
                 gap: 10px;
                 display: flex;

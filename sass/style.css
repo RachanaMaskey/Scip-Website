@@ -411,7 +411,7 @@
 }
 
 .smart {
-  background: url("../images/speed.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  background: url("../images/smart.png"), linear-gradient(to bottom, rgb(12, 13, 15));
   color: white;
 }
 .smart .topic {
@@ -460,9 +460,6 @@
   color: black;
   background-color: #42E26F;
 }
-.smart .nav {
-  background-color: rgba(12, 12, 13, 0.5019607843);
-}
 .smart .bars .tabs-bg {
   margin: 30px 100px 0px 100px;
   background-color: rgba(255, 255, 255, 0.05);
@@ -470,6 +467,11 @@
           backdrop-filter: blur(50px);
   border: 1px solid #B9B9B9;
   border-radius: 10px;
+  min-height: 300px;
+}
+.smart .bars .tabs-bg .tab-top {
+  background-color: rgba(12, 12, 13, 0.5019607843);
+  min-height: 300px;
 }
 .smart .bars .tabs-bg .tab-data {
   padding-left: 50px;
@@ -514,7 +516,8 @@
 }
 
 .recognized {
-  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  background-color: #0C0C0D;
+  padding: 100px 140px 200px 140px;
 }
 .recognized h2 {
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
@@ -533,7 +536,7 @@
 }
 
 .tools {
-  background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  background-color: #0C0C0D;
 }
 .tools .top h1 {
   text-transform: uppercase;
@@ -582,25 +585,25 @@
           backdrop-filter: blur(50px);
   border: 1px solid #B9B9B9;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
+  min-height: 250px;
 }
 .tools .tools-container .box .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 .tools .tools-container .box .description {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 .tools .tools-container .box .tool-button {
   opacity: 0;
-  height: 0px;
   background-color: white;
   border-radius: 30px;
   width: -moz-fit-content;
   width: fit-content;
   padding: 9px 19px;
-  margin: 20px auto 0;
+  margin-top: auto;
   border: none;
   gap: 10px;
   display: flex;
