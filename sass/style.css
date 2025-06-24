@@ -375,16 +375,28 @@
 .events .upcoming .hover-column img {
   transition: all 0.5s linear;
 }
+.events .upcoming .hover-column::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 15, 36, 0.4);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s linear;
+  inset: 0;
+}
 .events .upcoming .hover-column:hover::before {
   opacity: 1;
+  height: auto;
 }
 .events .upcoming .hover-content {
   position: absolute;
   width: 100%;
   bottom: 0;
+  scale: 1px;
   transition: all 0.5s linear;
 }
 .events .upcoming .hover-content .title {
+  transition: all 0.5s linear;
   justify-content: end;
   font-size: 20px;
   font-weight: 600;
@@ -409,8 +421,12 @@
   height: auto;
 }
 .events .upcoming .hover-column:hover .hover-content {
-  font-size: 30px;
-  transform: scale(1) translate(1%, -130%);
+  z-index: 3;
+  scale: 1.1;
+  transform: scale(1) translate(5%, -110%);
+}
+.events .upcoming .hover-column:hover .hover-content .title {
+  font-size: 22px !important;
 }
 
 .icoe {
@@ -507,8 +523,8 @@
   padding: 0px 150px;
 }
 .affiliates .hover-column {
-  width: 250px;
-  height: 100px;
+  max-width: 250px;
+  min-height: 100px;
   border-radius: 15px;
   overflow: hidden;
   background-color: white;
@@ -837,7 +853,7 @@
 
 .recognized {
   background-color: #0C0C0D;
-  padding: 100px 140px 200px 140px;
+  padding: 100px 140px 150px 140px;
 }
 .recognized h2 {
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
