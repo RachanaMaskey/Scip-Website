@@ -375,16 +375,6 @@
 .events .upcoming .hover-column img {
   transition: all 0.5s linear;
 }
-.events .upcoming .hover-column::before {
-  content: "";
-  position: absolute;
-  background: rgb(0, 15, 36);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  opacity: 0;
-  transition: all 0.5s linear;
-  inset: 0;
-}
 .events .upcoming .hover-column:hover::before {
   opacity: 1;
 }
@@ -419,9 +409,8 @@
   height: auto;
 }
 .events .upcoming .hover-column:hover .hover-content {
-  top: 10px;
-  transform: translateY(-10px);
-  transform-origin: bottom;
+  font-size: 30px;
+  transform: scale(1) translate(1%, -130%);
 }
 
 .icoe {
@@ -568,7 +557,7 @@
   /* On hover: grow background to cover button */
 }
 .speed .topic {
-  padding: 0px 200px;
+  padding: 0px 70px;
 }
 .speed .topic h1 {
   text-transform: uppercase;
@@ -693,7 +682,7 @@
   color: white;
 }
 .smart .topic {
-  padding: 0px 200px;
+  padding: 0px 80px;
   /* On hover: grow background to cover button */
 }
 .smart .topic h1 {
@@ -947,7 +936,7 @@
   border: 1px solid #B9B9B9;
   border-radius: 10px;
   padding: 20px 20px 5px 20px;
-  min-height: 250px;
+  min-height: 270px;
   /* On hover: grow background to cover button */
 }
 .tools .tools-container .box .title {

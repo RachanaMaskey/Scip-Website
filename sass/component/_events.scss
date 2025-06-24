@@ -92,24 +92,24 @@
     .upcoming{
         .hover-column{
             position: relative;
-            // transition: all 0.5s linear;
+            // transition: all 0.1s linear;
             max-width:450px;
             max-height:250px;
             overflow:hidden;
             img{
                 transition: all 0.5s linear;
             }
-            &::before{
-                content:"";
-                position: absolute;
-                // background: linear-gradient(to bottom, #10151b, #245d75);
-                background: rgba(0, 15, 36, 1);
-                backdrop-filter: blur(20px);
-                opacity:0;
-                // z-index: -1;
-                transition: all 0.5s linear;
-                inset:0;
-            }
+            // &::before{
+            //     content:"";
+            //     position: absolute;
+            //     // background: linear-gradient(to bottom, #10151b, #245d75);
+            //     background: rgba(0, 15, 36, 1);
+            //     backdrop-filter: blur(20px);
+            //     opacity:0;
+            //     // z-index: -1;
+            //     transition: all 0.5s linear;
+            //     inset:0;
+            // }
             &:hover::before{
                 opacity:1;
             }
@@ -145,9 +145,8 @@
             height:auto;
         }
         .hover-column:hover .hover-content{
-            top:10px;
-            transform: translateY(-10px);
-            transform-origin: bottom;
+            font-size: 30px;
+            transform: scale(1) translate(1%,-130%);
         }
     }
 }
