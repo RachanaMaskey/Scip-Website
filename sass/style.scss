@@ -54,23 +54,17 @@
 //for font nunito sans
 @font-face {
     font-family: "Nunito Sans";
-    src: url("../font/nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wghtNunitoSans-Regular.ttf") format('truetype');
+    src: url("../font/nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format('truetype');
 }
 
 
 .roboto{
-    font-family: serif;
+    font-family: "Roboto";
 }
-.nunuito{
-    
+.nunito{
+    font-family: "Nunito Sans";
 }
 body{
-    h1,h2,h3,h4,h5,h6{
-        font-family: "Roboto";
-    }
-    p{
-        font-family: "Nunito Sans";
-    }
     .line{
         height: 4px;
         width: 100%; 

@@ -166,7 +166,6 @@
   padding: 12px 24px;
   border: none;
   border-radius: 30px;
-  overflow: hidden;
   z-index: 1;
   transition: all 0.8s linear;
   color: black;
@@ -226,7 +225,7 @@
 .proposition {
   background: url("../images/bg4.png"), url("../images/bg3.png");
 }
-.proposition h1 {
+.proposition .top h1 {
   text-transform: uppercase;
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
   background-clip: text;
@@ -237,7 +236,7 @@
   font-size: 64px;
   font-weight: 700;
 }
-.proposition p {
+.proposition .top p {
   color: white;
   font-size: 20px;
   font-weight: 400;
@@ -251,14 +250,18 @@
           backdrop-filter: blur(50px);
   border: 1px solid #B9B9B9;
   border-radius: 10px;
+  transition: all 0.3s linear;
   padding: 20px;
+  min-height: 265px;
+  color: white;
 }
 .proposition .proposition-container .box .title {
-  font-size: 20px;
+  font-family: "Roboto";
+  font-size: 25px;
   font-weight: 600;
 }
 .proposition .proposition-container .box .decription {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
 }
 .proposition .proposition-container .box:hover {
@@ -318,6 +321,7 @@
   margin: auto;
   border: none;
   border-radius: 30px;
+  font-family: "Nunito Sans";
 }
 .events button p {
   color: black;
@@ -522,6 +526,7 @@
   font-weight: 600;
 }
 .speed .content .awareness {
+  font-family: "Roboto";
   border-block: 1px solid rgba(245, 245, 245, 0.8);
   transition: all 0.8s linear;
 }
@@ -652,7 +657,6 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 9px 19px 9px 19px;
-  margin: auto;
   border: none;
   border-radius: 30px;
 }
@@ -773,10 +777,12 @@
   padding: 20px 20px 5px 20px;
 }
 .tools .tools-container .box .title {
+  font-family: "Roboto";
   font-size: 20px;
   font-weight: 600;
 }
 .tools .tools-container .box .description {
+  font-family: "Nunito Sans";
   font-size: 14px;
   font-weight: 400;
 }
@@ -787,9 +793,9 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 9px 19px 9px 19px;
-  margin: auto;
   border: none;
   border-radius: 30px;
+  transition: all 0.3s linear;
 }
 .tools .tools-container .box .tool-button p {
   color: black;
@@ -798,15 +804,14 @@
   background-color: #42E26F;
   border-radius: 50%;
   transform: scale(0.9);
+  transition: all 0.3s ease-out;
 }
 .tools .tools-container .box .tool-button:hover {
   background-color: #42E26F;
-  transition: all 0.3s linear;
   transform-origin: left top;
 }
 .tools .tools-container .box .tool-button:hover .signup-arrow {
   transform: scale(1.1);
-  transition: all 0.3s ease-out;
   transform-origin: left top;
 }
 .tools .tools-container .box:hover {
@@ -890,18 +895,16 @@ footer ul li {
 }
 @font-face {
   font-family: "Nunito Sans";
-  src: url("../font/nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wghtNunitoSans-Regular.ttf") format("truetype");
+  src: url("../font/nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("truetype");
 }
 .roboto {
-  font-family: serif;
-}
-
-body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Roboto";
 }
-body p {
+
+.nunito {
   font-family: "Nunito Sans";
 }
+
 body .line {
   height: 4px;
   width: 100%;
