@@ -166,7 +166,7 @@
   padding: 12px 24px;
   border: none;
   border-radius: 30px;
-  z-index: 1;
+  overflow: hidden;
   transition: all 0.8s linear;
   color: black;
   margin: auto;
@@ -174,13 +174,11 @@
 .intelligence button p {
   margin: 0;
   position: relative;
-  z-index: 2;
   color: black;
   transition: all 0.5s linear;
 }
 .intelligence button .signup-arrow {
   position: relative;
-  z-index: 2;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -199,13 +197,12 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  z-index: 1;
   transition: all 0.5s linear;
 }
 .intelligence button:hover::before {
-  width: 300%;
-  height: 300%;
-  right: -100%;
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
 
 .youtube {
@@ -300,50 +297,114 @@
   font-size: 20px;
   font-weight: 400;
 }
-.events img {
+.events .top-content {
+  /* On hover: grow background to cover button */
+}
+.events .top-content img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s linear;
 }
-.events img:hover {
+.events .top-content img:hover {
   scale: 1.05;
 }
-.events .date {
+.events .top-content .date {
   color: white;
 }
-.events button {
+.events .top-content button {
+  position: relative;
   background-color: white;
-  border-radius: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 19px 9px 19px;
-  margin: auto;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
-  font-family: "Nunito Sans";
-}
-.events button p {
+  overflow: hidden;
+  transition: all 0.8s linear;
   color: black;
+  margin: auto;
 }
-.events button .signup-arrow {
+.events .top-content button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
+.events .top-content button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.events .top-content button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transform: scale(0.9);
+  transition: all 0.5s linear;
 }
-.events button:hover {
-  background-color: #42E26F;
-  transition: all 0.3s linear;
-  transform-origin: left top;
+.events .top-content button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
-.events button:hover .signup-arrow {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
-  transform-origin: left top;
+.events .upcoming .hover-column {
+  position: relative;
+  transition: all 0.5s linear;
+  max-width: 450px;
+  max-height: 250px;
+  overflow: hidden;
+}
+.events .upcoming .hover-column img {
+  transition: all 0.5s linear;
+}
+.events .upcoming .hover-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: all 0.5s linear;
+}
+.events .upcoming .hover-content .title {
+  justify-content: end;
+  font-size: 20px;
+  font-weight: 600;
+}
+.events .upcoming .hover-content .date {
+  opacity: 0;
+  height: 0px;
+  transition: all 0.2s linear;
+}
+.events .upcoming .hover-content .date p, .events .upcoming .hover-content .date i {
+  font-size: 16px;
+  font-weight: 400;
+}
+.events .upcoming .hover-content .date i {
+  color: white;
+}
+.events .upcoming .hover-column:hover img {
+  scale: 1.2;
+}
+.events .upcoming .hover-column:hover .hover-content .date {
+  opacity: 1;
+  height: auto;
+}
+.events .upcoming .hover-column:hover .hover-content {
+  top: 10px;
+  transform: translateY(-10px);
+  transform-origin: bottom;
 }
 
 .icoe {
   background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
+  /* On hover: grow background to cover button */
 }
 .icoe h2 {
   text-transform: uppercase;
@@ -362,32 +423,48 @@
   font-weight: 400;
 }
 .icoe button {
+  position: relative;
   background-color: white;
-  border-radius: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 19px 9px 19px;
-  margin: auto;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
 }
 .icoe button p {
+  margin: 0;
+  position: relative;
   color: black;
+  transition: all 0.5s linear;
 }
 .icoe button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.icoe button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transform: scale(0.9);
+  transition: all 0.5s linear;
 }
-.icoe button:hover {
-  background-color: #42E26F;
-  transition: all 0.3s linear;
-  transform-origin: left top;
-}
-.icoe button:hover .signup-arrow {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
-  transform-origin: left top;
+.icoe button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
 .icoe .icoe-img img {
   width: 1000px;
@@ -466,6 +543,7 @@
 .speed {
   background: url("../images/bg4.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
   color: white;
+  /* On hover: grow background to cover button */
 }
 .speed .topic {
   padding: 0px 200px;
@@ -494,32 +572,48 @@
   font-weight: 600;
 }
 .speed button {
+  position: relative;
   background-color: white;
-  border-radius: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 19px 9px 19px;
-  margin: auto;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
 }
 .speed button p {
+  margin: 0;
+  position: relative;
   color: black;
+  transition: all 0.5s linear;
 }
 .speed button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.speed button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transform: scale(0.9);
+  transition: all 0.5s linear;
 }
-.speed button:hover {
-  background-color: #42E26F;
-  transition: all 0.3s linear;
-  transform-origin: left top;
-}
-.speed button:hover .signup-arrow {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
-  transform-origin: left top;
+.speed button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
 .speed .content {
   padding: 0px 100px;
@@ -578,6 +672,7 @@
 }
 .smart .topic {
   padding: 0px 200px;
+  /* On hover: grow background to cover button */
 }
 .smart .topic h1 {
   text-transform: uppercase;
@@ -596,32 +691,48 @@
   font-weight: 400;
 }
 .smart .topic button {
+  position: relative;
   background-color: white;
-  border-radius: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 19px 9px 19px;
-  margin: auto;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
 }
 .smart .topic button p {
+  margin: 0;
+  position: relative;
   color: black;
+  transition: all 0.5s linear;
 }
 .smart .topic button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.smart .topic button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transform: scale(0.9);
+  transition: all 0.5s linear;
 }
-.smart .topic button:hover {
-  background-color: #42E26F;
-  transition: all 0.3s linear;
-  transform-origin: left top;
-}
-.smart .topic button:hover .signup-arrow {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
-  transform-origin: left top;
+.smart .topic button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
 .smart .nav-link {
   color: white;
@@ -645,6 +756,7 @@
 }
 .smart .bars .tabs-bg .tab-data {
   padding-left: 50px;
+  /* On hover: grow background to cover button */
 }
 .smart .bars .tabs-bg .tab-data h4 {
   font-size: 24px;
@@ -655,31 +767,47 @@
   color: transparent;
 }
 .smart .bars .tabs-bg .tab-data button {
+  position: relative;
   background-color: white;
-  border-radius: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 19px 9px 19px;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
-}
-.smart .bars .tabs-bg .tab-data button p {
+  overflow: hidden;
+  transition: all 0.8s linear;
   color: black;
 }
+.smart .bars .tabs-bg .tab-data button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
 .smart .bars .tabs-bg .tab-data button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.smart .bars .tabs-bg .tab-data button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transform: scale(0.9);
+  transition: all 0.5s linear;
 }
-.smart .bars .tabs-bg .tab-data button:hover {
-  background-color: #42E26F;
-  transition: all 0.3s linear;
-  transform-origin: left top;
-}
-.smart .bars .tabs-bg .tab-data button:hover .signup-arrow {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
-  transform-origin: left top;
+.smart .bars .tabs-bg .tab-data button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
 .smart .tabs-top {
   margin: auto;
@@ -719,6 +847,9 @@
 .tools {
   background-color: #0C0C0D;
 }
+.tools .top {
+  /* On hover: grow background to cover button */
+}
 .tools .top h1 {
   text-transform: uppercase;
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
@@ -740,32 +871,48 @@
   margin-top: -100px;
 }
 .tools .top button {
+  position: relative;
   background-color: white;
-  border-radius: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 19px 9px 19px;
-  margin: auto;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
 }
 .tools .top button p {
+  margin: 0;
+  position: relative;
   color: black;
+  transition: all 0.5s linear;
 }
 .tools .top button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.tools .top button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transform: scale(0.9);
+  transition: all 0.5s linear;
 }
-.tools .top button:hover {
-  background-color: #42E26F;
-  transition: all 0.3s linear;
-  transform-origin: left top;
-}
-.tools .top button:hover .signup-arrow {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
-  transform-origin: left top;
+.tools .top button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
 .tools .tools-container {
   padding: 0px 150px;
@@ -778,6 +925,7 @@
   border: 1px solid #B9B9B9;
   border-radius: 10px;
   padding: 20px 20px 5px 20px;
+  /* On hover: grow background to cover button */
 }
 .tools .tools-container .box .title {
   font-family: "Roboto";
@@ -789,33 +937,50 @@
   font-size: 14px;
   font-weight: 400;
 }
-.tools .tools-container .box .tool-button {
-  opacity: 0;
+.tools .tools-container .box button {
+  position: relative;
   background-color: white;
-  border-radius: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 19px 9px 19px;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
-  transition: all 0.3s linear;
-}
-.tools .tools-container .box .tool-button p {
+  overflow: hidden;
+  transition: all 0.8s linear;
   color: black;
+  opacity: 0;
+  margin: auto;
 }
-.tools .tools-container .box .tool-button .signup-arrow {
+.tools .tools-container .box button p {
+  margin: 0;
+  position: relative;
+  color: black;
+  transition: all 0.5s linear;
+}
+.tools .tools-container .box button .signup-arrow {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+}
+.tools .tools-container .box button::before {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transform: scale(0.9);
-  transition: all 0.3s ease-out;
+  transition: all 0.5s linear;
 }
-.tools .tools-container .box .tool-button:hover {
-  background-color: #42E26F;
-  transform-origin: left top;
-}
-.tools .tools-container .box .tool-button:hover .signup-arrow {
-  transform: scale(1.1);
-  transform-origin: left top;
+.tools .tools-container .box button:hover::before {
+  width: 200%;
+  height: 200%;
+  right: -20%;
 }
 .tools .tools-container .box:hover {
   background: linear-gradient(to bottom, #10151b, #245d75);
