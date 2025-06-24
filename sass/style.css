@@ -142,7 +142,7 @@
 .intelligence {
   background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgba(12, 12, 13, 0), rgb(12, 12, 13));
   padding-bottom: 200px;
-  /* Expanding green background on hover */
+  /* On hover: grow background to cover button */
 }
 .intelligence h1 {
   text-transform: uppercase;
@@ -163,49 +163,50 @@
 .intelligence button {
   position: relative;
   background-color: white;
-  color: green;
   padding: 12px 24px;
   border: none;
-  border-radius: 999px;
+  border-radius: 30px;
   overflow: hidden;
-  transition: color 0.4s ease;
   z-index: 1;
+  transition: all 0.8s linear;
+  color: black;
+  margin: auto;
 }
-.intelligence .signup-arrow {
+.intelligence button p {
+  margin: 0;
   position: relative;
   z-index: 2;
-  background-color: green;
+  color: black;
+  transition: all 0.5s linear;
+}
+.intelligence button .signup-arrow {
+  position: relative;
+  z-index: 2;
   border-radius: 50%;
-  transition: all 0.6s ease;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s linear;
 }
 .intelligence button::before {
   content: "";
   position: absolute;
-  right: 0;
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-color: green;
+  background-color: #42E26F;
   border-radius: 50%;
-  z-index: 0;
-  transition: all 0.6s ease;
+  z-index: 1;
+  transition: all 0.5s linear;
 }
 .intelligence button:hover::before {
   width: 300%;
   height: 300%;
   right: -100%;
-}
-.intelligence button:hover {
-  color: white;
-}
-.intelligence button:hover .signup-arrow i {
-  color: white;
 }
 
 .youtube {
