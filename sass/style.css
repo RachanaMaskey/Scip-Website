@@ -368,13 +368,25 @@
 }
 .events .upcoming .hover-column {
   position: relative;
-  transition: all 0.5s linear;
   max-width: 450px;
   max-height: 250px;
   overflow: hidden;
 }
 .events .upcoming .hover-column img {
   transition: all 0.5s linear;
+}
+.events .upcoming .hover-column::before {
+  content: "";
+  position: absolute;
+  background: rgb(0, 15, 36);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  opacity: 0;
+  transition: all 0.5s linear;
+  inset: 0;
+}
+.events .upcoming .hover-column:hover::before {
+  opacity: 1;
 }
 .events .upcoming .hover-content {
   position: absolute;
@@ -935,6 +947,7 @@
   border: 1px solid #B9B9B9;
   border-radius: 10px;
   padding: 20px 20px 5px 20px;
+  min-height: 250px;
   /* On hover: grow background to cover button */
 }
 .tools .tools-container .box .title {
@@ -954,6 +967,7 @@
   border: none;
   border-radius: 30px;
   overflow: hidden;
+  height: 0px;
   transition: all 0.2s linear;
   color: black;
   opacity: 0;
@@ -998,6 +1012,7 @@
 }
 .tools .tools-container .box:hover .tool-button {
   opacity: 1;
+  height: 50px;
 }
 
 .difference {

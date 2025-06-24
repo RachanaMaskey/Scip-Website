@@ -92,18 +92,27 @@
     .upcoming{
         .hover-column{
             position: relative;
-            transition: all 0.5s linear;
+            // transition: all 0.5s linear;
             max-width:450px;
             max-height:250px;
             overflow:hidden;
             img{
                 transition: all 0.5s linear;
             }
-            // &:hover{
-            //     background: linear-gradient(to top, rgba(0, 0, 0, 0),rgba(0, 15, 36, 1));
-            //     opacity: 0.5;
-            //     z-index: 2;
-            // }
+            &::before{
+                content:"";
+                position: absolute;
+                // background: linear-gradient(to bottom, #10151b, #245d75);
+                background: rgba(0, 15, 36, 1);
+                backdrop-filter: blur(20px);
+                opacity:0;
+                // z-index: -1;
+                transition: all 0.5s linear;
+                inset:0;
+            }
+            &:hover::before{
+                opacity:1;
+            }
         }
         .hover-content{
             position: absolute;
@@ -135,7 +144,7 @@
             opacity: 1;
             height:auto;
         }
-         .hover-column:hover .hover-content{
+        .hover-column:hover .hover-content{
             top:10px;
             transform: translateY(-10px);
             transform-origin: bottom;
