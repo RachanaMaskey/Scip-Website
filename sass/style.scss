@@ -57,6 +57,13 @@
     src: url("../font/nunito/NunitoSans-VariableFont_YTLC,opsz,wdth,wghtNunitoSans-Regular.ttf") format('truetype');
 }
 
+
+.roboto{
+    font-family: serif;
+}
+.nunuito{
+    
+}
 body{
     h1,h2,h3,h4,h5,h6{
         font-family: "Roboto";
@@ -74,5 +81,6 @@ body{
 .top-container{
     background-image: url('../images/background1.png');
     background-size: cover;
+    overflow:hidden;
 }
 

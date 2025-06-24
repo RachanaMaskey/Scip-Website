@@ -35,6 +35,18 @@
             .signup-arrow{
                 background-color: #42E26F;
                 border-radius: 50%;
+                transform: scale(0.9);
+            }
+            &:hover{
+                background-color:#42E26F;
+                // transform: scale(0);
+                transition: all 0.3s linear;
+                transform-origin: left top;
+                .signup-arrow{
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-out;
+                    transform-origin: left top;
+                }
             }
         }
     }
@@ -47,7 +59,7 @@
             border: 1px solid #B9B9B9;
             border-radius: 10px;
             padding: 20px 20px 5px 20px;
-            min-height: 250px;
+            // min-height: 200px;
             .title {
             font-size: 20px;
             font-weight: 600;
@@ -56,29 +68,32 @@
             font-size: 14px;
             font-weight: 400;
             }
-            .tool-button {
+            .tool-button{
                 opacity:0;
                 background-color: white;
-                border-radius: 30px;
+                border-radius: 0px;
                 width: fit-content;
-                padding: 9px 19px;
-                margin-top:auto;
-                border: none;
-                gap: 10px;
-                display: flex;
-                transition: all 0.3s linear;
-
-                p {
-                    color: black;
-                    margin: 0;
+                padding:9px 19px 9px 19px;
+                margin:auto;
+                border:none;
+                border-radius: 30px;
+                p{
+                    color:black;
                 }
-
-                .signup-arrow {
+                .signup-arrow{
                     background-color: #42E26F;
                     border-radius: 50%;
-
-                    i {
-                    font-size: 15px;
+                    transform: scale(0.9);
+                }
+                &:hover{
+                    background-color:#42E26F;
+                    // transform: scale(0);
+                    transition: all 0.3s linear;
+                    transform-origin: left top;
+                    .signup-arrow{
+                        transform: scale(1.1);
+                        transition: all 0.3s ease-out;
+                        transform-origin: left top;
                     }
                 }
             }

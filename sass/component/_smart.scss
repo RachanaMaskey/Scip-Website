@@ -32,8 +32,17 @@
             .signup-arrow{
                 background-color: #42E26F;
                 border-radius: 50%;
-                i {
-                    font-size: 15px;
+                transform: scale(0.9);
+            }
+            &:hover{
+                background-color:#42E26F;
+                // transform: scale(0);
+                transition: all 0.3s linear;
+                transform-origin: left top;
+                .signup-arrow{
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-out;
+                    transform-origin: left top;
                 }
             }
         }
@@ -55,10 +64,10 @@
             backdrop-filter: blur(50px);
             border: 1px solid #B9B9B9;
             border-radius: 10px;
-            min-height: 300px;
+            min-height: 320px;
             .tab-top{
                background-color: #0C0C0D80;
-                min-height: 300px;
+                min-height: 320px;
             }
             .tab-data{
                 padding-left:50px;
@@ -75,14 +84,27 @@
                     border-radius: 0px;
                     width: fit-content;
                     padding:9px 19px 9px 19px;
+                    margin:auto;
                     border:none;
-                    border-radius: 25px;
+                    border-radius: 30px;
                     p{
                         color:black;
                     }
                     .signup-arrow{
                         background-color: #42E26F;
                         border-radius: 50%;
+                        transform: scale(0.9);
+                    }
+                    &:hover{
+                        background-color:#42E26F;
+                        // transform: scale(0);
+                        transition: all 0.3s linear;
+                        transform-origin: left top;
+                        .signup-arrow{
+                            transform: scale(1.1);
+                            transition: all 0.3s ease-out;
+                            transform-origin: left top;
+                        }
                     }
                 }
             }

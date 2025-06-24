@@ -1,5 +1,5 @@
 .speed{
-   background: url('../images/speed.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
+   background: url('../images/bg4.png'),linear-gradient(to top, rgba(12, 12, 13, 1),rgba(12, 12, 13, 2),rgba(12, 12, 13, 1));
    color:white;
     .topic{
         padding:0px 200px;
@@ -26,7 +26,7 @@
             font-weight: 600;
         }
     }
-    button{
+   button{
         background-color: white;
         border-radius: 0px;
         width: fit-content;
@@ -40,6 +40,75 @@
         .signup-arrow{
             background-color: #42E26F;
             border-radius: 50%;
+            transform: scale(0.9);
+        }
+        &:hover{
+            background-color:#42E26F;
+            // transform: scale(0);
+            transition: all 0.3s linear;
+            transform-origin: left top;
+            .signup-arrow{
+                transform: scale(1.1);
+                transition: all 0.3s ease-out;
+                transform-origin: left top;
+            }
+        }
+    }
+    .content{
+        padding:0px 100px;
+        h3{
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .awareness{
+            border-block:1px solid #F5F5F5CC;
+            transition: all 0.8s linear;
+            .num{
+                transform: scale(1);
+            }
+            .after h3{
+                opacity:0;
+            }
+            .speed-contents{
+                p{
+                    opacity:0;
+                    height:0px;
+                }
+            }
+            img{
+                opacity:0;
+                height:0px;
+                transform: scale(0);
+            }
+            &:hover {
+                .before{
+                    gap:0px !important;
+                }
+                .num{
+                    opacity:0;
+                    height:0px;
+                    transform: scale(0);
+                    // transition: all 0.8s linear;
+                    // transform-origin: left top;
+                }
+                i{
+                    opacity:0;
+                    height:0px;
+                }
+                .speed-contents{
+                    p{  
+                        opacity:1;
+                        height:auto;
+                    }
+                }
+                img{
+                    opacity:1;
+                    height:auto;
+                    transform: scale(1);
+                    transition: all 0.8s linear;
+                    transform-origin:left;
+                }
+            }
         }
     }
 }
