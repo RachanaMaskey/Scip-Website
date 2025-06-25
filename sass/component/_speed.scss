@@ -172,5 +172,15 @@
                 font-size: 18px;
             }
         }
+        .awareness{
+            &:hover{
+                img{
+                   width: 100%;
+                }
+                .division{
+                    padding: 10px 5px 10px 5px !important;
+                }
+            }
+        }
     }
 }
