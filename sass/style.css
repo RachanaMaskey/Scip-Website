@@ -93,6 +93,11 @@
   color: black;
   transform: scale(1.1);
 }
+@media screen and (max-width: 430px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+}
 
 .scroller {
   padding: 10px 60px;
@@ -682,30 +687,38 @@
 }
 .speed .content .awareness {
   border-block: 1px solid rgba(245, 245, 245, 0.8);
+  transition: all 0.5s linear;
 }
 .speed .content .awareness .num {
   opacity: 1;
   transform: scale(1);
-  transition: all 0.8s linear;
 }
 .speed .content .awareness img {
   opacity: 0;
   height: 0px;
   transform: scale(0);
-  transition: all 0.8s linear;
+  transition: all 0.5s linear;
 }
 .speed .content .awareness .awareness-text {
   opacity: 0;
   height: 0px;
-  transition: all 0.8s linear;
+  transition: all 0.5s linear;
 }
 .speed .content .awareness .awareness-title {
-  transition: all 0.8s linear;
+  transition: all 0.5s linear;
   margin-bottom: 20px;
+}
+.speed .content .awareness i {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+.speed .content .awareness:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .speed .content .awareness:hover .num {
   opacity: 0;
   transform: scale(0);
+  height: 0px;
 }
 .speed .content .awareness:hover img {
   opacity: 1;
@@ -715,10 +728,14 @@
 .speed .content .awareness:hover .awareness-text {
   opacity: 1;
   height: auto;
-  transform: translate(0%, -50%);
+  margin: -40px;
+  transform: translate(4%, -5%);
 }
 .speed .content .awareness:hover .awareness-title {
-  transform: translateX(100px);
+  transform: translate(4%, -5%);
+}
+.speed .content .awareness:hover i {
+  opacity: 0;
 }
 
 .smart {
