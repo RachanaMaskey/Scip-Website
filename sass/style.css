@@ -1146,6 +1146,12 @@
     margin: 30px 20px 0px 20px !important;
     min-height: 120px !important;
   }
+  .smart .bars .tabs-bg .row {
+    max-width: 300px;
+  }
+  .smart .bars .tabs-bg .row col {
+    max-width: 400px !important;
+  }
   .smart .bars .tabs-bg .tab-top {
     min-height: 200px !important;
   }
@@ -1157,6 +1163,9 @@
   }
   .smart .bars .tabs-bg .tab-data button {
     padding: 5px 24px !important;
+  }
+  .smart .bars .tabs-bg .tab-content {
+    max-width: 400px !important;
   }
   .smart .tabs-top {
     margin: auto;
@@ -1192,6 +1201,19 @@
   color: white;
   font-size: 20px;
   font-weight: 400;
+}
+@media screen and (max-width: 430px) {
+  .recognized {
+    padding: 90px 20px 80px 20px;
+  }
+  .recognized h2 {
+    padding: 0px !important;
+    text-align: center;
+    font-size: 34px;
+  }
+  .recognized p {
+    font-size: 14px;
+  }
 }
 
 .tools {

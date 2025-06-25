@@ -184,6 +184,12 @@
             .tabs-bg{
                 margin:30px 20px 0px 20px !important;
                 min-height: 120px !important;
+                .row{
+                    max-width:300px;
+                    col{
+                        max-width: 400px !important;
+                    }
+                }
                 .tab-top{
                     min-height: 200px !important;
                 }
@@ -195,6 +201,9 @@
                     button {
                         padding: 5px 24px !important;
                     }
+                }
+                .tab-content{
+                    max-width:400px !important;
                 }
             }
         }
