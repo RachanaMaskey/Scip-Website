@@ -1120,6 +1120,59 @@
   font-size: 28px;
   font-weight: 600;
 }
+@media screen and (max-width: 430px) {
+  .smart {
+    padding: 0px 20px !important;
+  }
+  .smart .topic {
+    padding: 0px !important;
+  }
+  .smart .topic h1 {
+    font-size: 34px;
+    padding: 20px !important;
+  }
+  .smart .topic .decription {
+    padding: 0px 0px 10px 0px !important;
+    font-size: 14px;
+  }
+  .smart .topic h3 {
+    font-size: 18px;
+    margin-bottom: 30px !important;
+  }
+  .smart button {
+    padding: 5px 24px !important;
+  }
+  .smart .bars .tabs-bg {
+    margin: 30px 20px 0px 20px !important;
+    min-height: 120px !important;
+  }
+  .smart .bars .tabs-bg .tab-top {
+    min-height: 200px !important;
+  }
+  .smart .bars .tabs-bg .tab-data {
+    padding: 0px 20px 30px 20px !important;
+  }
+  .smart .bars .tabs-bg .tab-data h4 {
+    font-size: 20px;
+  }
+  .smart .bars .tabs-bg .tab-data button {
+    padding: 5px 24px !important;
+  }
+  .smart .tabs-top {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    border: 1px solid #B9B9B9;
+    border-radius: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .smart .tabs-top h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 
 .recognized {
   background-color: #0C0C0D;
