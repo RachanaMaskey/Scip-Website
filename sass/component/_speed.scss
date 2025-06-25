@@ -76,61 +76,121 @@
         right: -20%;
     }
     .content{
+        font-family: "Roboto";
         padding:0px 100px;
         h3{
             font-size: 28px;
             font-weight: 600;
         }
+        // .awareness{
+        //     font-family: "Roboto";
+        //     border-block:1px solid #F5F5F5CC;
+        //     transition: all 0.8s linear;
+        //     .num{
+        //         transform: scale(1);
+        //         transition: all 0.8s linear;
+        //     }
+        //     .after h3{
+        //         opacity:0;
+        //     }
+        //     .speed-contents{
+        //         p{
+        //             opacity:0;
+        //             height:0px;
+        //             transition: all 0.8s linear;
+        //         }
+        //     }
+        //     img{
+        //         opacity:0;
+        //         height:0px;
+        //         transform: scale(0);
+        //         transition: all 0.8s linear;
+        //     }
+        //     &::before{
+        //         content:"";
+        //         position: absolute;
+        //         opacity:0;
+        //         z-index: 1;
+        //         transition: all 0.5s linear;
+        //         inset:0;
+        //     }
+        //     &:hover::before{
+        //         // opacity:1;
+        //         // height: auto;
+        //     }
+        //     &:hover {
+        //         .before{
+        //             gap:0px !important;
+        //         }
+        //         .num{
+        //             opacity:0;
+        //             height:0px;
+        //             transform: scale(0);
+        //             transform-origin: left top;
+        //         }
+        //         i{
+        //             opacity:0;
+        //             height:0px;
+        //         }
+        //         .speed-contents{
+        //             p{  
+        //                 opacity:1;
+        //                 height:auto;
+        //                 transform: scale(1) translate(5%,-110%);
+        //             }
+        //         }
+        //         img{
+        //             opacity:1;
+        //             height:auto;
+        //             transform: scale(1);
+        //             transform-origin:left;
+        //         }
+        //     }
+        // }
         .awareness{
-            font-family: "Roboto";
             border-block:1px solid #F5F5F5CC;
-            transition: all 0.8s linear;
             .num{
+                opacity:1;
                 transform: scale(1);
-            }
-            .after h3{
-                opacity:0;
-            }
-            .speed-contents{
-                p{
-                    opacity:0;
-                    height:0px;
-                }
+                transition: all 0.8s linear;
             }
             img{
-                opacity:0;
+                opacity: 0;
                 height:0px;
                 transform: scale(0);
+                transition: all 0.8s linear;
             }
-            &:hover {
-                .before{
-                    gap:0px !important;
-                }
+            .awareness-text{
+                opacity:0;
+                height: 0px;
+                transition: all 0.8s linear;
+            }
+            .awareness-title{
+                transition: all 0.8s linear;
+                margin-bottom: 20px;
+            }
+            &:hover{
                 .num{
                     opacity:0;
-                    height:0px;
                     transform: scale(0);
-                    // transition: all 0.8s linear;
-                    // transform-origin: left top;
-                }
-                i{
-                    opacity:0;
-                    height:0px;
-                }
-                .speed-contents{
-                    p{  
-                        opacity:1;
-                        height:auto;
-                    }
                 }
                 img{
-                    opacity:1;
+                    opacity: 1;
                     height:auto;
                     transform: scale(1);
-                    transition: all 0.8s linear;
-                    transform-origin:left;
+                    // transform-origin: 50% 50% 20px;
+                }
+                .awareness-text{
+                    opacity:1;
+                    height: auto;
+                    transform:translate(0%,-50%);
+                }
+                .awareness-title{
+                    // transform:translate(0%,-50%);
+                    transform: translateX(100px);
                 }
             }
+
         }
     }
 }
