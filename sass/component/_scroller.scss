@@ -48,6 +48,7 @@
     100% { transform: translateX(-200vw); } /* move 2 slides (200vw) to the left */
     }
     @media screen and (max-width: 430px) {
+        height: fit-content;
         padding:10px 20px;
         .spotlight{
             padding:5px !important;

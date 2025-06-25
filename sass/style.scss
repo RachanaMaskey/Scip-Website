@@ -122,5 +122,11 @@ body{
         height: 200%;
         right: -20%;
     }
+    @media screen and (max-width: 430px) {
+        button{
+           display: none;
+        }
+        
+    }
 }
 
