@@ -181,20 +181,19 @@
             padding: 5px 24px !important;
         }  
         .bars{
+            padding:30px 0px !important;
             .tabs-bg{
                 margin:30px 20px 0px 20px !important;
                 min-height: 120px !important;
                 .row{
-                    max-width:300px;
-                    col{
-                        max-width: 400px !important;
-                    }
+                    max-width:450px;
                 }
                 .tab-top{
-                    min-height: 200px !important;
+                    min-height: 100px !important;
                 }
                 .tab-data{
-                    padding:0px 20px 30px 20px !important;
+                    max-width:500px !important;
+                    padding:10px 10px 30px 15px !important;
                     h4{
                         font-size: 20px;
                     }
@@ -202,21 +201,11 @@
                         padding: 5px 24px !important;
                     }
                 }
-                .tab-content{
-                    max-width:400px !important;
-                }
             }
         }
         .tabs-top{
-            margin:auto;
-            background-color:rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(50px);
-            border: 1px solid #B9B9B9;
-            border-radius: 10px;
-            width: fit-content;
             h3{
-                font-size: 20px;
-                font-weight: 600;
+                font-size: 18px;
             }
         }
         
