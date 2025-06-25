@@ -161,13 +161,24 @@
   .scroller {
     padding: 10px 20px;
   }
+  .scroller .spotlight {
+    padding: 5px !important;
+    border-radius: 20px;
+  }
   .scroller p {
     font-size: 12px;
+  }
+  .scroller .slide {
+    padding: 0px !important;
+    height: 20px;
   }
   .scroller .slide svg {
     width: 12px;
     height: 12px;
     padding: 0px !important;
+  }
+  .scroller .scoller-content {
+    gap: 0 !important;
   }
 }
 
@@ -190,6 +201,14 @@
 .home .scroll-down {
   font-size: 20px;
   color: white;
+}
+@media screen and (max-width: 430px) {
+  .home .home-content h1 {
+    font-size: 34px;
+  }
+  .home .home-content p {
+    font-size: 14px;
+  }
 }
 
 .intelligence {

@@ -49,15 +49,24 @@
     }
     @media screen and (max-width: 430px) {
         padding:10px 20px;
+        .spotlight{
+            padding:5px !important;
+            border-radius: 20px;
+        }
         p{
             font-size: 12px;
         }
         .slide{
+            padding:0px !important;
+            height:20px;
             svg{
                 width:12px;
                 height:12px;
                 padding:0px !important
             }
+        }
+        .scoller-content{
+            gap:0 !important;
         }
     }
 }
