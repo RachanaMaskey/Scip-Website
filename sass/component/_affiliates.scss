@@ -60,4 +60,23 @@
         transform-origin: center;
         scale:1;
     }
+    @media screen and (max-width: 430px) {
+        padding:0px 20px !important;
+        .topic{
+            h1{
+                font-size: 34px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .affiliates-container{
+            padding:20px !important;
+            .row{
+                padding: 0px !important;
+                margin: auto !important;
+            }
+        }
+        
+    }
 }

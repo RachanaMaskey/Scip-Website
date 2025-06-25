@@ -1,5 +1,13 @@
 .proposition{
-    background: url('../images/bg4.png'),url('../images/bg3.png') no-repeat;
+      background: radial-gradient(
+      circle,
+      rgba(12, 12, 13, 0),
+      rgba(12, 12, 13, 1) 
+    ),
+    url("../images/bg4.png") no-repeat,
+    url("../images/bg3.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
     .top{
         h1{
             text-transform: uppercase;

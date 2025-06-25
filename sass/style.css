@@ -331,7 +331,9 @@
 }
 
 .proposition {
-  background: url("../images/bg4.png"), url("../images/bg3.png") no-repeat;
+  background: radial-gradient(circle, rgba(12, 12, 13, 0), rgb(12, 12, 13)), url("../images/bg4.png") no-repeat, url("../images/bg3.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 .proposition .top h1 {
   text-transform: uppercase;
@@ -676,6 +678,37 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 430px) {
+  .icoe {
+    padding: 30px 20px !important;
+  }
+  .icoe .row {
+    padding: 0px !important;
+    margin: auto !important;
+  }
+  .icoe img {
+    padding-bottom: 20px !important;
+  }
+  .icoe h2 {
+    font-size: 34px;
+  }
+  .icoe p {
+    font-size: 14px;
+  }
+  .icoe .col-data {
+    justify-items: center;
+    padding-bottom: 30px;
+  }
+  .icoe button {
+    padding: 8px 20px;
+  }
+  .icoe .icoe-img img {
+    width: 320px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .affiliates {
   background: url("../images/intelligence.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13));
@@ -739,6 +772,24 @@
   opacity: 1;
   transform-origin: center;
   scale: 1;
+}
+@media screen and (max-width: 430px) {
+  .affiliates {
+    padding: 0px 20px !important;
+  }
+  .affiliates .topic h1 {
+    font-size: 34px;
+  }
+  .affiliates .topic p {
+    font-size: 14px;
+  }
+  .affiliates .affiliates-container {
+    padding: 20px !important;
+  }
+  .affiliates .affiliates-container .row {
+    padding: 0px !important;
+    margin: auto !important;
+  }
 }
 
 .speed {
@@ -882,6 +933,34 @@
 }
 .speed .content .awareness:hover i {
   opacity: 0;
+}
+@media screen and (max-width: 430px) {
+  .speed {
+    padding: 20px !important;
+  }
+  .speed .topic {
+    padding: 0px !important;
+  }
+  .speed .topic h1 {
+    font-size: 34px;
+  }
+  .speed .topic .decription {
+    padding: 0px 0px 10px 0px !important;
+    font-size: 14px;
+  }
+  .speed .topic h3 {
+    font-size: 18px;
+    margin-bottom: 30px !important;
+  }
+  .speed button {
+    padding: 5px 24px;
+  }
+  .speed .content {
+    padding: 0px 20px !important;
+  }
+  .speed .content h3 {
+    font-size: 18px;
+  }
 }
 
 .smart {
@@ -1315,7 +1394,7 @@ body .line {
   overflow: hidden;
   transition: all 0.8s linear;
   color: black;
-  margin: 34% 0px 0px 82%;
+  margin: 33% 0px 0px 82%;
   z-index: 999;
 }
 .top-container button p {
