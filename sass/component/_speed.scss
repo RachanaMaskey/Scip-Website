@@ -161,6 +161,9 @@
                 transform: scale(0);
                 transition: all 0.5s linear;
             }
+            .awareness-content{
+                gap:40px;
+            }
             .awareness-text{
                 opacity:0;
                 height: 0px;
@@ -180,6 +183,7 @@
                     opacity:0;
                     transform: scale(0);
                     height:0px;
+                    width: 0px;
                 }
                 img{
                     opacity: 1;
@@ -187,6 +191,9 @@
                     transform: scale(1);
                     // transform:translate(0.5%,0%);
                     // transform-origin: -5% 0% 20px;
+                }
+                .awareness-content{
+                    gap:0px;
                 }
                 .awareness-text{
                     opacity:1;
