@@ -114,7 +114,7 @@
         }
         .mobile-nav{
             display: block;
-            button{
+            .menubar{
                 padding: 5px;
                 i{
                     color:white;
@@ -135,6 +135,33 @@
             }
             .btn-close {
                 filter: invert(1);
+            }
+            .nav {
+                --bs-nav-link-color:grey !important;
+                --bs-nav-link-hover-color: grey !important;
+            }
+            .top-navbar{
+                button{
+                    color:white !important;
+                    border:1px solid white !important;  
+                }
+                border-block-end: 5px double white   ;
+            }
+            .bottom-navbar{
+                i{
+                    padding-top: 5px !important;
+                    font: 15px !important;
+                }
+                .dropdown-menu{
+                    background-color:rgba(185, 185, 185, 0.8);
+                    backdrop-filter: blur(50px);
+                    --bs-dropdown-link-active-bg: white !important;
+                    --bs-dropdown-link-active-color:black !important;
+                    li{
+                        padding-right:10px !important; ;
+                    }
+                }
+                
             }
         }
     }

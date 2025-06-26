@@ -106,10 +106,10 @@
   .navbar .mobile-nav {
     display: block;
   }
-  .navbar .mobile-nav button {
+  .navbar .mobile-nav .menubar {
     padding: 5px;
   }
-  .navbar .mobile-nav button i {
+  .navbar .mobile-nav .menubar i {
     color: white;
     font-size: 30px;
   }
@@ -125,6 +125,31 @@
   }
   .navbar .mobile-nav .btn-close {
     filter: invert(1);
+  }
+  .navbar .mobile-nav .nav {
+    --bs-nav-link-color:grey !important;
+    --bs-nav-link-hover-color: grey !important;
+  }
+  .navbar .mobile-nav .top-navbar {
+    border-block-end: 5px double white;
+  }
+  .navbar .mobile-nav .top-navbar button {
+    color: white !important;
+    border: 1px solid white !important;
+  }
+  .navbar .mobile-nav .bottom-navbar i {
+    padding-top: 5px !important;
+    font: 15px !important;
+  }
+  .navbar .mobile-nav .bottom-navbar .dropdown-menu {
+    background-color: rgba(185, 185, 185, 0.8);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    --bs-dropdown-link-active-bg: white !important;
+    --bs-dropdown-link-active-color:black !important;
+  }
+  .navbar .mobile-nav .bottom-navbar .dropdown-menu li {
+    padding-right: 10px !important;
   }
 }
 
