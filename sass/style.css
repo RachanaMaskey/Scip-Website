@@ -627,19 +627,23 @@
   .events p {
     font-size: 14px;
   }
-  .events .top-content button {
-    width: 50%;
-    padding: 5px 10px !important;
-  }
-  .events .top-content button i {
-    padding: 10px 0px 10px 2px !important;
-  }
   .events .date i {
     padding: 0px !important;
   }
   .events .content {
-    padding: 10px 30px 10px 30px !important;
-    width: 400px !important;
+    padding: 10px 10px 10px 10px !important;
+    max-width: 300px !important;
+    width: 100%;
+  }
+  .events .content button {
+    width: 50%;
+    padding: 0px 8px !important;
+  }
+  .events .content button i {
+    padding: 10px 23px 0px 0px !important;
+  }
+  .events .content button p {
+    padding: 5px !important;
   }
   .events .upcoming {
     margin: 0px !important;
@@ -853,7 +857,7 @@
   }
   .affiliates .hover-column .title {
     padding: 10px;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -1633,9 +1637,6 @@ footer ul li {
   font-family: "Nunito Sans";
 }
 
-body {
-  overflow-x: hidden;
-}
 body .line {
   height: 4px;
   width: 100%;
@@ -1699,5 +1700,7 @@ body .line {
 @media screen and (max-width: 500px) {
   .top-container .become-member button {
     opacity: 0;
+    width: 0px !important;
+    height: 0px !important;
   }
 }/*# sourceMappingURL=style.css.map */
