@@ -212,9 +212,8 @@
 }
 @media screen and (max-width: 500px) {
   .scroller {
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 10px 20px;
+    padding: 0px 10px !important;
+    height: 30px !important;
   }
   .scroller .spotlight {
     padding: 5px !important;
@@ -225,15 +224,11 @@
   }
   .scroller .slide {
     padding: 1px !important;
-    height: 30px;
   }
   .scroller .slide svg {
     width: 12px;
     height: 12px;
     padding: 1px !important;
-  }
-  .scroller .scoller-content {
-    gap: 0 !important;
   }
 }
 
@@ -841,7 +836,7 @@
     font-size: 14px;
   }
   .affiliates .affiliates-container {
-    padding: 20px !important;
+    padding: 0px !important;
   }
   .affiliates .affiliates-container .row {
     padding: 0px !important;
@@ -856,8 +851,8 @@
        object-fit: contain;
   }
   .affiliates .hover-column .title {
-    padding: 10px;
-    font-size: 12px;
+    padding: 15px;
+    font-size: 10px;
   }
 }
 
@@ -1235,7 +1230,7 @@
   }
   .smart .bars .tabs-bg .tab-data {
     max-width: 500px !important;
-    padding: 10px 10px 30px 15px !important;
+    padding: 10px !important;
   }
   .smart .bars .tabs-bg .tab-data h4 {
     font-size: 20px;
@@ -1249,8 +1244,8 @@
 }
 
 .recognized {
-  background-color: #0C0C0D;
-  padding: 100px 140px 150px 140px;
+  background-color: hsl(240, 4%, 5%);
+  padding: 100px 140px 120px 140px;
 }
 .recognized h2 {
   background: linear-gradient(to right, #00FFD1, #00F1E3, #00D8FA);
@@ -1269,10 +1264,13 @@
 }
 @media screen and (max-width: 500px) {
   .recognized {
-    padding: 90px 20px 80px 20px;
+    padding: 50px 20px !important;
+  }
+  .recognized .row {
+    gap: 0px !important;
   }
   .recognized h2 {
-    padding: 0px !important;
+    padding: 20px 0px !important;
     text-align: center;
     font-size: 34px;
   }
