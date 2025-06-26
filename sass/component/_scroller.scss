@@ -50,18 +50,18 @@
     100% { transform: translateX(-100vw); } /* move 2 slides (200vw) to the left */
     }
     @media screen and (max-width: 500px) {
-        // height: fit-content;
         padding:0px 10px !important;
-        height:30px !important;
+        height:55px !important;
         .spotlight{
-            padding:5px !important;
+            padding:8px !important;
             border-radius: 20px;
+            margin:13px 0px;
         }
         p{
             font-size: 10px;
         }
         .slide{
-            padding:1px !important;
+            padding-top:11px !important;
             
             svg{
                 width:12px;
