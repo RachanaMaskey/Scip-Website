@@ -77,6 +77,16 @@
                 margin: auto !important;
             }
         }
-        
+        .hover-column{
+            height: 100px;
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+            .title {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
     }
 }

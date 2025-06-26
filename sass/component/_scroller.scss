@@ -2,6 +2,7 @@
     padding:10px 60px;
     backdrop-filter: blur(15px);
     background-color: rgba(245, 245, 245, 0.1);
+    overflow:hidden;
     .spotlight{
         width:fit-content;
         text-transform: uppercase;
@@ -49,26 +50,34 @@
     100% { transform: translateX(-200vw); } /* move 2 slides (200vw) to the left */
     }
     @media screen and (max-width: 500px) {
-        height: fit-content;
-        padding:10px 20px;
-        .spotlight{
-            padding:5px !important;
-            border-radius: 20px;
-        }
-        p{
-            font-size: 12px;
-        }
-        .slide{
-            padding:5px !important;
-            height:10px;
-            svg{
-                width:12px;
-                height:12px;
-                padding:1px !important
-            }
-        }
-        .scoller-content{
-            gap:0 !important;
-        }
+        display: none !important;
+        width:0px !important;
+        height:0px !important;
+        // height: fit-content;
+        // padding:10px 20px;
+        // .spotlight{
+        //     padding:5px !important;
+        //     border-radius: 20px;
+        // }
+        // p{
+        //     font-size: 12px;
+        // }
+        // .slide{
+        //     padding:5px !important;
+        //     height:10px;
+        //     svg{
+        //         width:12px;
+        //         height:12px;
+        //         padding:1px !important
+        //     }
+        // }
+        // @keyframes scroll {
+        //     0%   { transform: translateX(0); }
+        //     100% { transform: translateX(0); }
+            
+        // }
+        // .scoller-content{
+        //     gap:0 !important;
+        // }
     }
 }

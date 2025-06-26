@@ -158,6 +158,7 @@
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   background-color: rgba(245, 245, 245, 0.1);
+  overflow: hidden;
   /* Slider container */
   /* Slides container: 4 slides (2 original + 2 duplicates) */
   /* Individual slides */
@@ -211,28 +212,9 @@
 }
 @media screen and (max-width: 500px) {
   .scroller {
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 10px 20px;
-  }
-  .scroller .spotlight {
-    padding: 5px !important;
-    border-radius: 20px;
-  }
-  .scroller p {
-    font-size: 12px;
-  }
-  .scroller .slide {
-    padding: 5px !important;
-    height: 10px;
-  }
-  .scroller .slide svg {
-    width: 12px;
-    height: 12px;
-    padding: 1px !important;
-  }
-  .scroller .scoller-content {
-    gap: 0 !important;
+    display: none !important;
+    width: 0px !important;
+    height: 0px !important;
   }
 }
 
@@ -842,6 +824,18 @@
     padding: 0px !important;
     margin: auto !important;
   }
+  .affiliates .hover-column {
+    height: 100px;
+  }
+  .affiliates .hover-column img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .affiliates .hover-column .title {
+    padding: 10px;
+    font-size: 14px;
+  }
 }
 
 .speed {
@@ -986,7 +980,7 @@
 .speed .content .awareness:hover i {
   opacity: 0;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .speed {
     padding: 20px !important;
   }
