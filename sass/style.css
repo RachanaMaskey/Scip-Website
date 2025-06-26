@@ -184,9 +184,9 @@
   width: fit-content;
 }
 .scroller .slider {
-  width: 100vw;
   overflow: hidden;
   position: relative;
+  white-space: nowrap;
 }
 .scroller .slides {
   display: flex;
@@ -194,7 +194,6 @@
   animation: scroll 18s linear infinite;
 }
 .scroller .slide {
-  width: 100vw;
   height: 45px;
   flex-shrink: 0;
   display: flex;
@@ -781,6 +780,7 @@
   color: white;
   font-size: 20px;
   font-weight: 400;
+  padding: 0px 300px;
 }
 .affiliates .affiliates-container {
   padding: 0px 150px;
@@ -835,6 +835,7 @@
   }
   .affiliates .topic p {
     font-size: 14px;
+    padding: 0px !important;
   }
   .affiliates .affiliates-container {
     padding: 0px !important;
@@ -842,6 +843,8 @@
   .affiliates .affiliates-container .row {
     padding: 0px !important;
     margin: auto !important;
+    flex-wrap: nowrap !important;
+    overflow: auto !important;
   }
   .affiliates .hover-column {
     height: 100px;
@@ -1510,9 +1513,27 @@
 
 .difference {
   background: url("../images/difference.png"), linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgb(12, 12, 13)) no-repeat;
+  position: relative;
+}
+.difference .video-container {
+  width: 100%;
+}
+.difference .video-container video {
+  width: 100%;
+}
+.difference .video-container::after {
+  content: "";
+  position: absolute;
+  background: rgba(12, 12, 13, 0.2);
+  inset: 0;
+  z-index: 1;
 }
 .difference .content {
-  padding: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 .difference .content .topic {
   font-family: "Roboto";
@@ -1542,16 +1563,20 @@
 }
 @media screen and (max-width: 500px) {
   .difference .content {
-    padding: 100px 20px !important;
+    padding: 0px !important;
   }
   .difference .content .topic {
-    font-size: 34px;
+    font-size: 22px;
   }
   .difference .content p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .difference .content .description {
-    font-size: 18px;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .difference .video-container {
+    width: 100%;
   }
 }
 
@@ -1636,6 +1661,9 @@ footer ul li {
   font-family: "Nunito Sans";
 }
 
+body {
+  overflow-x: hidden !important;
+}
 body .line {
   height: 4px;
   width: 100%;

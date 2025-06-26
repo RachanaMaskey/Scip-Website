@@ -22,9 +22,10 @@
     }
    /* Slider container */
     .slider {
-    width: 100vw;
+    // width: 100vw;
     overflow: hidden;
     position: relative;
+    white-space: nowrap;
     }
 
     /* Slides container: 4 slides (2 original + 2 duplicates) */
@@ -36,7 +37,7 @@
 
     /* Individual slides */
     .slide {
-        width: 100vw;
+        // width: 100vw;
         height: 45px;
         flex-shrink: 0;
         display: flex;

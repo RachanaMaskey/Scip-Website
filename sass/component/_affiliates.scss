@@ -15,6 +15,7 @@
             color: white;
             font-size:20px;
             font-weight: 400;
+            padding: 0px 300px;
         }
     }   
     .affiliates-container{
@@ -68,6 +69,7 @@
             }
             p{
                 font-size: 14px;
+                padding:0px !important;
             }
         }
         .affiliates-container{
@@ -75,6 +77,8 @@
             .row{
                 padding: 0px !important;
                 margin: auto !important;
+                flex-wrap: nowrap !important;
+                overflow: auto !important;
             }
         }
         .hover-column{
