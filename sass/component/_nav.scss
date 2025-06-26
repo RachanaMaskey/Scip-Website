@@ -17,7 +17,7 @@
         i{
             transition:all .2s linear;
         }
-     }
+    }
     .nav-option{
         .sign-in{
             font-weight: 600;
@@ -62,12 +62,6 @@
         }
     }
     li.hover-1:hover {
-        a{
-            // background: linear-gradient(to right, #00FFD1, #00F1E3,#00D8FA);
-            // background-clip: text;
-            // -webkit-background-clip: text;
-            // color: transparent;
-        }
         i{
             transform: rotate(180deg);
         }
@@ -160,8 +154,7 @@
                     li{
                         padding-right:10px !important; ;
                     }
-                }
-                
+                }  
             }
         }
     }

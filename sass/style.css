@@ -220,7 +220,7 @@
     margin: 13px 0px;
   }
   .scroller p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .scroller .slide {
     padding-top: 11px !important;
@@ -449,6 +449,7 @@
   }
   .proposition .proposition-container .box {
     padding: 15px;
+    min-height: auto;
   }
 }
 
@@ -839,6 +840,7 @@
   }
   .affiliates .affiliates-container {
     padding: 0px !important;
+    padding-bottom: 30px !important;
   }
   .affiliates .affiliates-container .row {
     padding: 0px !important;
@@ -1486,7 +1488,7 @@
     border: 1px solid #B9B9B9;
     border-radius: 10px;
     padding: 20px 20px 5px 20px;
-    min-height: 270px;
+    min-height: auto;
   }
   .tools .tools-container .box .title {
     font-size: 18px;
