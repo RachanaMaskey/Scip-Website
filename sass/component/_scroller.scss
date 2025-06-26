@@ -30,54 +30,49 @@
     /* Slides container: 4 slides (2 original + 2 duplicates) */
     .slides {
     display: flex;
-    width: 100vw; /* 4 slides * 100vw */
-    animation: scroll 28s linear infinite;
+    width: 200vw; /* 4 slides * 100vw */
+    animation: scroll 18s linear infinite;
     }
 
     /* Individual slides */
     .slide {
-    width: 100vw;
-    height: 45px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+        width: 100vw;
+        height: 45px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
     }
     /* Continuous sliding animation */
     @keyframes scroll {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(-200vw); } /* move 2 slides (200vw) to the left */
+    100% { transform: translateX(-100vw); } /* move 2 slides (200vw) to the left */
     }
     @media screen and (max-width: 500px) {
-        display: none !important;
-        width:0px !important;
-        height:0px !important;
-        // height: fit-content;
-        // padding:10px 20px;
-        // .spotlight{
-        //     padding:5px !important;
-        //     border-radius: 20px;
-        // }
-        // p{
-        //     font-size: 12px;
-        // }
-        // .slide{
-        //     padding:5px !important;
-        //     height:10px;
-        //     svg{
-        //         width:12px;
-        //         height:12px;
-        //         padding:1px !important
-        //     }
-        // }
-        // @keyframes scroll {
-        //     0%   { transform: translateX(0); }
-        //     100% { transform: translateX(0); }
-            
-        // }
-        // .scoller-content{
-        //     gap:0 !important;
-        // }
+        // display: none !important;
+        // width:0px !important;
+        // height:0px !important;
+        height: fit-content;
+        padding:10px 20px;
+        .spotlight{
+            padding:5px !important;
+            border-radius: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+        .slide{
+            padding:1px !important;
+            height:30px;
+            svg{
+                width:12px;
+                height:12px;
+                padding:1px !important
+            }
+        }
+        .scoller-content{
+            gap:0 !important;
+        }
     }
 }
