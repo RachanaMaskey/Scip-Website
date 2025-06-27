@@ -1,6 +1,6 @@
 .navbar {
   padding: 10px 80px;
-  background-color: rgba(61, 37, 37, 0.2);
+  background: transparent;
   position: sticky;
   z-index: 999;
 }
@@ -30,8 +30,8 @@
   position: absolute;
   top: 100%;
   left: 0;
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(59.5px);
+          backdrop-filter: blur(59.5px);
   background-color: rgba(185, 185, 185, 0.4);
   border-radius: 10px;
   min-width: 300px;
@@ -54,8 +54,8 @@
   position: absolute;
   top: 0%;
   left: 100%;
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(59.5px);
+          backdrop-filter: blur(59.5px);
   background-color: rgba(195, 195, 195, 0.8);
   border-radius: 10px;
   min-width: 250px;
@@ -63,6 +63,18 @@
 }
 .navbar .nav-option ul .level-2 a {
   padding: 10px;
+}
+.navbar .nav-option ul .smart-section {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -150%;
+  -webkit-backdrop-filter: blur(59.5px);
+          backdrop-filter: blur(59.5px);
+  background-color: rgba(185, 185, 185, 0.4);
+  border-radius: 10px;
+  min-width: 300px;
+  padding: 10px 20px 20px 20px;
 }
 .navbar li.hover-1:hover i {
   transform: rotate(180deg);
@@ -300,7 +312,7 @@
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
   margin: auto;
 }
@@ -308,7 +320,7 @@
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .intelligence button .signup-arrow {
@@ -319,7 +331,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .intelligence button .signup-arrow i {
   position: absolute;
@@ -338,7 +350,7 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .intelligence .signup-arrow:hover::before {
   width: 700%;
@@ -519,11 +531,11 @@
 .events .top-content button {
   position: relative;
   background-color: white;
-  padding: 12px 10px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
   margin: auto;
 }
@@ -531,7 +543,7 @@
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .events .top-content button .signup-arrow {
@@ -542,7 +554,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .events .top-content button .signup-arrow i {
   position: absolute;
@@ -561,10 +573,10 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .events .top-content .signup-arrow:hover::before {
-  width: 800%;
+  width: 700%;
   height: 700%;
   right: -20%;
 }
@@ -648,6 +660,10 @@
   .events p {
     font-size: 14px;
   }
+  .events .top-content button {
+    width: 50%;
+    padding: 5px 10px !important;
+  }
   .events .date i {
     padding: 0px !important;
   }
@@ -657,14 +673,7 @@
     width: 100%;
   }
   .events .content button {
-    width: 50%;
-    padding: 0px 8px !important;
-  }
-  .events .content button i {
-    padding: 10px 23px 0px 0px !important;
-  }
-  .events .content button p {
-    padding: 5px !important;
+    padding: 7px 6px !important;
   }
   .events .upcoming {
     margin: 0px !important;
@@ -713,7 +722,7 @@
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
   margin: auto;
 }
@@ -721,7 +730,7 @@
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .icoe button .signup-arrow {
@@ -732,7 +741,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .icoe button .signup-arrow i {
   position: absolute;
@@ -751,7 +760,7 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .icoe .signup-arrow:hover::before {
   width: 800%;
@@ -953,7 +962,7 @@
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
   margin: auto;
 }
@@ -961,7 +970,7 @@
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .speed button .signup-arrow {
@@ -972,7 +981,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .speed button .signup-arrow i {
   position: absolute;
@@ -991,7 +1000,7 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .speed .signup-arrow:hover::before {
   width: 800%;
@@ -1134,7 +1143,7 @@
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
   margin: auto;
 }
@@ -1142,7 +1151,7 @@
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .smart .topic button .signup-arrow {
@@ -1153,7 +1162,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .smart .topic button .signup-arrow i {
   position: absolute;
@@ -1172,7 +1181,7 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .smart .topic .signup-arrow:hover::before {
   width: 800%;
@@ -1222,14 +1231,14 @@
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
 }
 .smart .bars .tabs-bg .tab-data button p {
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .smart .bars .tabs-bg .tab-data button .signup-arrow {
@@ -1240,7 +1249,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .smart .bars .tabs-bg .tab-data button .signup-arrow i {
   position: absolute;
@@ -1259,7 +1268,7 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .smart .bars .tabs-bg .tab-data .signup-arrow:hover::before {
   width: 800%;
@@ -1414,7 +1423,7 @@
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
   margin: auto;
 }
@@ -1422,7 +1431,7 @@
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .tools .top button .signup-arrow {
@@ -1433,7 +1442,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .tools .top button .signup-arrow i {
   position: absolute;
@@ -1452,7 +1461,7 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .tools .top .signup-arrow:hover::before {
   width: 800%;
@@ -1523,7 +1532,7 @@
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .tools .tools-container .box button .signup-arrow {
@@ -1534,7 +1543,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .tools .tools-container .box button .signup-arrow i {
   position: absolute;
@@ -1553,7 +1562,7 @@
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .tools .tools-container .box .signup-arrow:hover::before {
   width: 800%;
@@ -1793,6 +1802,7 @@ body .line {
 .top-container .become-member {
   position: fixed;
   margin: 35% 0px 0px 82%;
+  z-index: 999;
   /* On hover: grow background to cover button */
 }
 .top-container .become-member button {
@@ -1802,7 +1812,7 @@ body .line {
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.3s linear;
   color: black;
   width: auto;
 }
@@ -1810,7 +1820,7 @@ body .line {
   margin: 0;
   position: relative;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 2;
 }
 .top-container .become-member button .member {
@@ -1821,7 +1831,7 @@ body .line {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .top-container .become-member button .member i {
   position: absolute;
@@ -1840,7 +1850,7 @@ body .line {
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 .top-container .become-member .member:hover::before {
   width: 1000%;
