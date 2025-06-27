@@ -1,5 +1,5 @@
 .scroller{
-    padding:10px 60px;
+    padding:5px 60px;
     backdrop-filter: blur(15px);
     background-color: rgba(245, 245, 245, 0.1);
     overflow:hidden;
@@ -38,7 +38,7 @@
     /* Individual slides */
     .slide {
         // width: 100vw;
-        height: 45px;
+        height: 20px;
         flex-shrink: 0;
         display: flex;
         justify-content: center;

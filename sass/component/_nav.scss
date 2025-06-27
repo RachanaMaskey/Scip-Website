@@ -1,5 +1,5 @@
 .navbar{
-    padding:15px 80px;
+    padding:10px 80px;
     // backdrop-filter: blur(20px);
     background-color: rgba(61, 37, 37, 0.2);
     position: sticky;
@@ -17,6 +17,10 @@
         i{
             transition:all .2s linear;
         }
+    }
+    img{
+        max-width: 130px;
+        max-height:150px;
     }
     .nav-option{
         .sign-in{
