@@ -320,21 +320,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.intelligence button::before {
+.intelligence button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intelligence .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.intelligence button:hover::before {
-  width: 200%;
-  height: 200%;
+.intelligence .signup-arrow:hover::before {
+  width: 700%;
+  height: 700%;
   right: -20%;
 }
 @media screen and (max-width: 500px) {
@@ -761,6 +768,7 @@
   .icoe .row {
     padding: 0px !important;
     margin: auto !important;
+    text-align: center;
   }
   .icoe img {
     padding-bottom: 20px !important;
@@ -854,6 +862,7 @@
 @media screen and (max-width: 500px) {
   .affiliates {
     padding: 0px 20px !important;
+    padding-top: 30px !important;
   }
   .affiliates .topic h1 {
     font-size: 34px;
