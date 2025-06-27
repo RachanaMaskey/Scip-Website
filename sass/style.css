@@ -296,7 +296,7 @@
 .intelligence button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
@@ -309,6 +309,7 @@
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .intelligence button .signup-arrow {
   position: relative;
@@ -518,7 +519,7 @@
 .events .top-content button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 10px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
@@ -531,6 +532,7 @@
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .events .top-content button .signup-arrow {
   position: relative;
@@ -542,21 +544,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.events .top-content button::before {
+.events .top-content button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.events .top-content .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.events .top-content button:hover::before {
-  width: 200%;
-  height: 200%;
+.events .top-content .signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
   right: -20%;
 }
 .events .upcoming .hover-column {
@@ -700,7 +709,7 @@
 .icoe button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
@@ -713,6 +722,7 @@
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .icoe button .signup-arrow {
   position: relative;
@@ -724,21 +734,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.icoe button::before {
+.icoe button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icoe .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.icoe button:hover::before {
-  width: 200%;
-  height: 200%;
+.icoe .signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
   right: -20%;
 }
 .icoe .icoe-img {
@@ -932,7 +949,7 @@
 .speed button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
@@ -945,6 +962,7 @@
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .speed button .signup-arrow {
   position: relative;
@@ -956,21 +974,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.speed button::before {
+.speed button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.speed .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.speed button:hover::before {
-  width: 200%;
-  height: 200%;
+.speed .signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
   right: -20%;
 }
 .speed .content {
@@ -1105,7 +1130,7 @@
 .smart .topic button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
@@ -1118,6 +1143,7 @@
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .smart .topic button .signup-arrow {
   position: relative;
@@ -1129,21 +1155,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.smart .topic button::before {
+.smart .topic button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.smart .topic .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.smart .topic button:hover::before {
-  width: 200%;
-  height: 200%;
+.smart .topic .signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
   right: -20%;
 }
 .smart .nav-link {
@@ -1185,7 +1218,7 @@
 .smart .bars .tabs-bg .tab-data button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
@@ -1197,6 +1230,7 @@
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .smart .bars .tabs-bg .tab-data button .signup-arrow {
   position: relative;
@@ -1208,21 +1242,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.smart .bars .tabs-bg .tab-data button::before {
+.smart .bars .tabs-bg .tab-data button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.smart .bars .tabs-bg .tab-data .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.smart .bars .tabs-bg .tab-data button:hover::before {
-  width: 200%;
-  height: 200%;
+.smart .bars .tabs-bg .tab-data .signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
   right: -20%;
 }
 .smart .tabs-top {
@@ -1369,7 +1410,7 @@
 .tools .top button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
@@ -1382,6 +1423,7 @@
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .tools .top button .signup-arrow {
   position: relative;
@@ -1393,21 +1435,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.tools .top button::before {
+.tools .top button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tools .top .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.tools .top button:hover::before {
-  width: 200%;
-  height: 200%;
+.tools .top .signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
   right: -20%;
 }
 .tools .video-container {
@@ -1461,21 +1510,21 @@
 .tools .tools-container .box button {
   position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 5px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
-  height: 0px;
-  transition: all 0.2s linear;
-  color: black;
+  transition: all 0.3s linear;
   opacity: 0;
-  margin: auto;
+  height: 0px;
+  color: black;
 }
 .tools .tools-container .box button p {
   margin: 0;
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .tools .tools-container .box button .signup-arrow {
   position: relative;
@@ -1487,21 +1536,28 @@
   justify-content: center;
   transition: all 0.5s linear;
 }
-.tools .tools-container .box button::before {
+.tools .tools-container .box button .signup-arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tools .tools-container .box .signup-arrow::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.tools .tools-container .box button:hover::before {
-  width: 200%;
-  height: 200%;
+.tools .tools-container .box .signup-arrow:hover::before {
+  width: 800%;
+  height: 700%;
   right: -20%;
 }
 .tools .tools-container .box:hover {
@@ -1671,36 +1727,15 @@ footer ul li {
     padding: 10px 20px !important;
     text-align: center;
   }
-  footer .footer-content {
-    font-size: 12px;
-  }
   footer .icon {
     justify-content: center !important;
-    padding-bottom: 0px !important;
-  }
-  footer i {
-    font-size: 18px;
+    padding-bottom: 30px !important;
   }
   footer .row {
     padding: 0px !important;
-    margin-bottom: 20px !important;
   }
   footer .col {
     padding: 0px !important;
-  }
-  footer .company {
-    opacity: 0 !important;
-    width: 0px !important;
-    height: 0px !important;
-  }
-  footer h5 {
-    font-size: 14px;
-  }
-  footer ul {
-    font-size: 10px;
-  }
-  footer .member {
-    font-size: 12px;
   }
 }
 
@@ -1756,25 +1791,27 @@ body .line {
   inset: 0;
 }
 .top-container .become-member {
-  /* On hover:background grows to cover button */
+  position: fixed;
+  margin: 35% 0px 0px 82%;
+  /* On hover: grow background to cover button */
 }
 .top-container .become-member button {
-  position: fixed;
+  position: relative;
   background-color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   border: none;
   border-radius: 30px;
   overflow: hidden;
   transition: all 0.8s linear;
   color: black;
-  margin: 35% 0px 0px 82%;
-  z-index: 999;
+  width: auto;
 }
 .top-container .become-member button p {
   margin: 0;
   position: relative;
   color: black;
   transition: all 0.5s linear;
+  z-index: 2;
 }
 .top-container .become-member button .member {
   position: relative;
@@ -1786,21 +1823,28 @@ body .line {
   justify-content: center;
   transition: all 0.5s linear;
 }
-.top-container .become-member button::before {
+.top-container .become-member button .member i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-container .become-member .member::before {
   content: "";
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #42E26F;
   border-radius: 50%;
   transition: all 0.5s linear;
 }
-.top-container .become-member button:hover::before {
-  width: 200%;
-  height: 200%;
+.top-container .become-member .member:hover::before {
+  width: 1000%;
+  height: 700%;
   right: -20%;
 }
 @media screen and (max-width: 500px) {

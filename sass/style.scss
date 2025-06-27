@@ -100,22 +100,71 @@ body{
         }
     }
     .become-member{
+        position: fixed;
+        margin: 35% 0px 0px 82%;
+        // button {
+        //     position: fixed;
+        //     background-color: white;
+        //     padding: 12px 24px;
+        //     border: none;
+        //     border-radius: 30px;
+        //     overflow: hidden;
+        //     transition: all 0.8s linear;
+        //     color:black;
+        //     margin: 35% 0px 0px 82%;
+        //     z-index:999;
+        //     p {
+        //         margin: 0;
+        //         position: relative;
+        //         color: black;
+        //         transition: all 0.5s linear;
+        //     }
+        //     .member{
+        //         position: relative;
+        //         border-radius: 50%;
+        //         width: 40px;
+        //         height: 40px;
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         transition: all 0.5s linear;
+        //     }
+        // }
+        // button::before {
+        //     content: '';
+        //     position: absolute;
+        //     right: 18px;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     width: 40px;
+        //     height: 40px;
+        //     background-color:  #42E26F;
+        //     border-radius: 50%;
+        //     transition: all 0.5s linear;
+        // }
+        // /* On hover:background grows to cover button */
+        // button:hover::before {
+        //     width: 200%;
+        //     height: 200%;
+        //     right: -20%;
+        // }
         button {
-            position: fixed;
+            position: relative;
             background-color: white;
-            padding: 12px 24px;
+            padding: 12px 14px;
             border: none;
             border-radius: 30px;
             overflow: hidden;
             transition: all 0.8s linear;
             color:black;
-            margin: 35% 0px 0px 82%;
-            z-index:999;
+
+            width:auto;
             p {
                 margin: 0;
                 position: relative;
                 color: black;
                 transition: all 0.5s linear;
+                z-index:2;
             }
             .member{
                 position: relative;
@@ -126,24 +175,32 @@ body{
                 align-items: center;
                 justify-content: center;
                 transition: all 0.5s linear;
+                i{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+
+                }
             }
         }
-        button::before {
+        .member::before {
             content: '';
             position: absolute;
             right: 18px;
             top: 50%;
-            transform: translateY(-50%);
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 40px;
             height: 40px;
             background-color:  #42E26F;
             border-radius: 50%;
             transition: all 0.5s linear;
         }
-        /* On hover:background grows to cover button */
-        button:hover::before {
-            width: 200%;
-            height: 200%;
+        /* On hover: grow background to cover button */
+        .member:hover::before {
+            width: 1000%;
+            height: 700%;
             right: -20%;
         }
     }
