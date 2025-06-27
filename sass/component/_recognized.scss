@@ -25,16 +25,18 @@
         }
     }
     @media screen and (max-width: 500px) {
-        padding:50px 20px !important;
+        padding:30px 20px !important;
         .row{
             gap:0px !important;
         }
         h2{
-            padding:20px 0px !important;
+            padding:10px 0px !important;
+            margin: 0px !important;
             text-align: center;
             font-size: 34px;
         }
         p{
+            text-align: center;
             font-size:14px;
         }
         img{

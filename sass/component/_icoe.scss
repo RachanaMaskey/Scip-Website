@@ -106,10 +106,10 @@
             padding: 8px 20px;
         } 
         .icoe-img{
+            height:200px;
             img{
-                width: 320px;
-                height:250px;
-                object-fit: cover;
+                width: 100%;
+                height:100%;
             }
         } 
     }

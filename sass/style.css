@@ -194,7 +194,7 @@
 }
 .scroller .slides {
   display: flex;
-  width: 200vw; /* 4 slides * 100vw */
+  width: 200vw; /* 2 slides * 100vw */
   animation: scroll 18s linear infinite;
 }
 .scroller .slide {
@@ -221,18 +221,18 @@
   .scroller .spotlight {
     padding: 8px !important;
     border-radius: 20px;
-    margin: 13px 0px;
+    margin: 10px 0px;
   }
   .scroller p {
     font-size: 12px;
-  }
-  .scroller .slide {
-    padding-top: 11px !important;
   }
   .scroller .slide svg {
     width: 12px;
     height: 12px;
     padding: 1px !important;
+  }
+  .scroller .slides {
+    animation: scroll 10s linear infinite;
   }
 }
 
@@ -439,7 +439,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   opacity: 0;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   inset: 0;
   z-index: -1;
 }
@@ -778,11 +778,12 @@
   .icoe button {
     padding: 8px 20px;
   }
+  .icoe .icoe-img {
+    height: 200px;
+  }
   .icoe .icoe-img img {
-    width: 320px;
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1310,17 +1311,19 @@
 }
 @media screen and (max-width: 500px) {
   .recognized {
-    padding: 50px 20px !important;
+    padding: 30px 20px !important;
   }
   .recognized .row {
     gap: 0px !important;
   }
   .recognized h2 {
-    padding: 20px 0px !important;
+    padding: 10px 0px !important;
+    margin: 0px !important;
     text-align: center;
     font-size: 34px;
   }
   .recognized p {
+    text-align: center;
     font-size: 14px;
   }
   .recognized img {
@@ -1502,14 +1505,14 @@
 }
 @media screen and (max-width: 500px) {
   .tools {
-    padding: 20px 20px !important;
+    padding: 30px 20px !important;
   }
   .tools .top h1 {
     font-size: 34px;
   }
   .tools .top p {
     font-size: 14px;
-    padding: 0px !important;
+    padding: 5px !important;
   }
   .tools .top .cube {
     margin-top: -10px;
@@ -1537,6 +1540,8 @@
     font-size: 14px;
   }
   .tools .tools-container .box button {
+    opacity: 1;
+    min-height: 50px;
     padding: 5px 24px !important;
   }
   .tools .tools-container .box button p {
@@ -1544,9 +1549,6 @@
   }
   .tools .tools-container .box button .signup-arrow {
     padding: 12px 0px 0px 3px !important;
-  }
-  .tools .tools-container .box:hover .tool-button {
-    min-height: 50px;
   }
   .tools .video-container {
     margin-bottom: 50px;
@@ -1665,7 +1667,7 @@ footer ul li {
   }
   footer .icon {
     justify-content: center !important;
-    padding-bottom: 45px !important;
+    padding-bottom: 0px !important;
   }
   footer i {
     font-size: 18px;
@@ -1676,6 +1678,11 @@ footer ul li {
   }
   footer .col {
     padding: 0px !important;
+  }
+  footer .company {
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
   }
   footer h5 {
     font-size: 14px;
@@ -1715,9 +1722,29 @@ body .line {
 }
 
 .top-container {
-  background-image: url("../images/background1.png");
-  background-size: cover;
   overflow: hidden;
+  position: relative;
+}
+.top-container .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.top-container .video-container video {
+  width: 100%;
+}
+.top-container .video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(12, 12, 13), rgb(12, 12, 13), rgba(12, 12, 13, 0.2), rgb(12, 12, 13), rgb(12, 12, 13));
+  inset: 0;
 }
 .top-container .become-member {
   /* On hover:background grows to cover button */
@@ -1768,6 +1795,13 @@ body .line {
   right: -20%;
 }
 @media screen and (max-width: 500px) {
+  .top-container {
+    background: url("../images/background1.png");
+    background-size: cover;
+  }
+  .top-container .video-container {
+    display: none;
+  }
   .top-container .become-member button {
     opacity: 0;
     width: 0px !important;
